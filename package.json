@@ -3,9 +3,9 @@
   "description": "Dummy WebApplication",
   "version": "0.0.1",
   "author": { 
-    "name" : "Rodrigo Dominguez",
+    "name" : "Rodrigo Domínguez Ruiz",
     "email" : "rodrigo.dominguez@gmail.com", 
-    "url" : "http://rodrigo.dominguez.com/"
+    "url" : "http://rodrigodominguez.com/"
   },
   "private": true,
   "dependencies": {
