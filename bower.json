@@ -1,0 +1,13 @@
+{
+  "name": "dummy-webapp",
+  "version": "0.0.1",
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "backbone": "~1.1.2",
+    "jquery-timeago": "~1.4.1",
+    "font-awesome": "~4.2.0",
+    "marked": "~0.3.2",
+    "modernizer": "~2.8.2"
+  },
+  "devDependencies": {}
+}

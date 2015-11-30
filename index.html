@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<title>Microsite</title>
+	<meta name="description" content="Just a simple microsite template.">
+	<meta name="keywords" content="micro, site">
+	<link rel="shortcut icon" href="images/microsite.ico">
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,600,400" type="text/css" media="screen">
+	<link rel="stylesheet" href="css/styles.css" type="text/css" media="screen">
+	<!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</head>
+<body>
+ <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+ 	window.fbAsyncInit = function() {
+        FB.init({
+          //appId      : '565839093567798', //barcelo.com
+          appId    : '177994785677626', //rdrdummy
+          xfbml      : true,
+          version    : 'v2.5'
+        });
+      };
+    </script>
+    
+    
+
+	<div class="menu">
+	<div id="stuff">
+	    <!-- Your share button code -->
+	    <div class="fb-share-button" data-href="http://google.es" data-layout="icon"></div>
+	    <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fgoogle.es&display=popup">Simple Share</a>
+    	<a href="https://www.facebook.com/dialog/share?href=http%3A%2F%2Fdummy.com%2Findex.html&redirect_uri=https%3A%2F%2Fdummy.com%2Fjander.html">Share Dialog</a>
+    	<a id="comparte2" href="https://www.facebook.com/dialog/feed?app_id=177994785677626&display=popup&caption=An%20example%20caption
+  &link=https%3A%2F%2Fdummy.com%2Fjander.html&name=nombrecito&picture=https%3A%2F%2Fcdn.meme.am%2Finstances2%2F500x%2F2641958.jpg&redirect_uri=http://dummy.com/index.html">Feed Dialog</a>
+  <a id="shareui" href="#">Share UI</a>
+  <a id="feedui" href="#">Feed UI</a>
+  <br/>
+  <br/>
+  <!-- Inserta esta etiqueta en la sección "head" o justo antes de la etiqueta "body" de cierre. -->
+<script src="https://apis.google.com/js/platform.js" async defer>
+  {lang: 'es'}
+</script>
+
+<!-- Inserta esta etiqueta donde quieras que aparezca Botón Compartir. -->
+<div class="g-plus" data-action="share"></div>
+<a href="https://plus.google.com/share?url=abracadaver.es" onclick="javascript:window.open(this.href,
+  '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><img
+  src="https://www.gstatic.com/images/icons/gplus-64.png" alt="Share on Google+"/></a>
+  <script type="text/javascript">
+  		$("#shareui").on("click",function(e){
+		  	FB.ui({
+				method: 'share',
+				href: 'http://abracadaver.es',
+				redirect_uri: 'http://dummy.com/index.html'
+			}, function(response){});
+		});
+	  $("#feedui").on("click",function(e){
+		  	FB.ui({
+				method: 'feed',
+				link: 'http://www.abracadaver.es',
+				description: 'hola holita hola',
+				picture: 'http://www.abracadaver.es/Content/images/abracadaver/ac_background.jpg',
+				title: 'titulito janderillo',
+				caption: 'An example caption',
+			}, function(response){});
+	  });
+  </script>
+<br/>
+<br/>
+<a data-pin-do="buttonBookmark" href="//www.pinterest.com/pin/create/button/"><img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_gray_20.png" /></a>
+<!-- Please call pinit.js only once per page -->
+<a data-pin-config="above" data-pin-do="buttonPin"
+    href="//www.pinterest.com/pin/create/button/?url=yourUrl.com&media=yourImage.jpg&description=yourDescription">
+    <img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_gray_20.png" /></a>
+    <br/>
+<br/>
+<a class="twitter-share-button"
+  href="https://twitter.com/intent/tweet?text=Hello%20world">
+Tweet</a>
+<a class="twitter-share-button"
+  href="https://twitter.com/home?status=Hello%20world">
+Tweet 2</a>
+
+<script async defer src="//assets.pinterest.com/js/pinit.js"></script>
+    </div>
+		<div class="container clearfix">
+			<div id="logo" class="grid_3">
+				<img src="images/yourlogo.png" alt="logo">
+			</div>
+
+			<div id="nav" class="grid_9 omega">
+				<ul class="navigation">
+					<li data-slide="1">Microsite</li>
+					<li data-slide="2">What is it?</li>
+					<li data-slide="3">Demo</li>
+					<li data-slide="4">Bridge</li>
+					<li data-slide="5">Slide 5</li>
+					<li data-slide="6">Slide 6</li>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+
+	<!-- template: slide -->
+	<!-- content width: 33%, 50%, 66%, 100% -->
+	<!-- slide color: none, red, green, blue, yellow, grey -->
+	<!-- display image: left, right (image only shows when content width is less than 100%) -->
+	<div class="slide" id="microsite" data-slide="1">
+		<div class="container clearfix">
+			<div class="grid_8">
+				<h1>Microsite</h1>
+				<h2>responsive framework</h2>
+				<p>
+					A microsite is an individual web page or a small cluster of pages which are meant to function as a discrete entity within an existing website 
+					or to complement an offline activity. The microsite's main landing page can have its own domain name or subdomain.
+				</p>
+			</div>
+			<div class="grid_4 omega">
+				<!--<img src="dummy.png" alt="dummy">-->
+			</div>
+		</div>
+	</div>
+
+	<!-- template: talking points -->
+	<!-- 2, 3 or 4 talking points (grid_6, grid_4 or grid_3) -->
+	<!-- slide color: none, red, green, blue, yellow, grey -->
+	<div class="slide blue center" id="what" data-slide="2" data-stellar-background-ratio="0.5">
+		<div class="container clearfix">
+			<div class="grid_12">
+				<h1>What is it?</h1>
+				<!--<h2>subtitle</h2>-->
+			</div>
+			<div class="grid_4">
+				<p><img src="images/responsive.png" alt="Responsive"></p>
+				<h3>Responsive</h3>
+				<p>The best way to have a website with abilities to be viewed in every computer, tablet and mobile.</p>
+			</div>
+			<div class="grid_4">
+				<p><img src="images/framework.png" alt="Framework"></p>
+				<h3>Framework</h3>
+				<p>It is a collection of Page and Component Templates to be used by web designers and developers.</p>
+			</div>
+			<div class="grid_4 omega">
+				<p><img src="images/parallax.png" alt="Parallax"></p>
+				<h3>Parallax Scrolling</h3>
+				<p>The last web trend! It makes a beautiful visual effect that brings a second life to every slide.</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- template: slide -->
+	<div class="slide" id="demo" data-slide="3">
+		<div class="container clearfix">
+			<div class="grid_12">
+				<h1>Demo</h1>
+				<h2>see how the grid changes when you resize your screen</h2>
+			</div>
+			<div class="grid_1 custom">1</div> <div class="grid_11 omega custom">11</div>
+			<div class="grid_2 custom">2</div> <div class="grid_10 omega custom">10</div>
+			<div class="grid_3 custom">3</div> <div class="grid_9 omega custom">9</div>
+			<div class="grid_4 custom">4</div> <div class="grid_8 omega custom">8</div>
+			<div class="grid_5 custom">5</div> <div class="grid_7 omega custom">7</div>
+			<div class="grid_6 custom">6</div> <div class="grid_6 omega custom">6</div>
+			<div class="grid_7 custom">7</div> <div class="grid_5 omega custom">5</div>
+			<div class="grid_8 custom">8</div> <div class="grid_4 omega custom">4</div>
+			<div class="grid_9 custom">9</div> <div class="grid_3 omega custom">3</div>
+			<div class="grid_10 custom">10</div> <div class="grid_2 omega custom">2</div>
+			<div class="grid_11 custom">11</div> <div class="grid_1 omega custom">1</div>
+			<div class="grid_12 custom">12</div>
+		</div>
+	</div>
+
+	<!-- template: slide -->
+	<div class="slide green" id="bridge" data-slide="4" data-stellar-background-ratio="0.5">
+		<div class="container clearfix">
+			<div class="grid_12">
+				<h1>Bridge</h1>
+				<h2>from Wikipedia, the free encyclopedia</h2>
+			</div>
+			<div class="grid_12">
+				<p>
+					The Sydney Harbour Bridge is a steel through arch bridge across Sydney Harbour that carries rail, vehicular, 
+					bicycle and pedestrian traffic between the Sydney central business district (CBD) and the North Shore. 
+					The dramatic view of the bridge, the harbour, and the nearby Sydney Opera House is an iconic image of Sydney, 
+					New South Wales, and Australia. The bridge is nicknamed "The Coathanger" because of its arch-based design.
+				</p>
+				<p>
+					Under the directions of Dr J.J.C. Bradfield of the NSW Department of Public Works, 
+					the bridge was designed and built by British firm Dorman Long and Co Ltd of Middlesbrough and opened in 1932. 
+					The bridge's design was influenced by the Hell Gate Bridge in New York. It is also the sixth longest spanning-arch bridge in the world, 
+					and it is the tallest steel arch bridge, measuring 134 metres (440 ft) from top to water level. 
+					It was also the world's widest long-span bridge, at 48.8 meters (160 feet) wide, until construction of the new Port Mann Bridge in Vancouver.
+				</p>
+			</div>
+		</div>
+	</div>
+	
+	<!-- template: slide -->
+	<div class="slide" id="slide5" data-slide="5">
+		<div class="container clearfix">
+			<div class="grid_8">
+				<h1>Slide 5</h1>
+				<h2>no background image</h2>
+				<p>You won't have a parallax effect, but it presents a nice change.</p>
+			</div>
+			<div class="grid_4 omega">
+				<img src="images/player.png" alt="picture">
+			</div>			
+		</div>			
+	</div>
+	
+	<!-- template: slide -->
+	<div class="slide grey" id="slide6" data-slide="6" data-stellar-background-ratio="0.5">
+		<div class="container clearfix">
+			<div class="grid_6">
+				<img src="images/keyboard.png" alt="picture">
+			</div>			
+			<div class="grid_6 omega">
+				<h1>Slide 6</h1>
+				<h2>just a pretty picture</h2>
+				<!--<p>paragraph text</p>-->
+			</div>
+		</div>			
+	</div>
+	
+	<div id="footer">
+		<p>Based on <a href="http://jalxob.com/cool-kitten" target="_blank">Cool Kitten</a>, made by <a href="http://www.jalxob.com" target="_blank">Jalxob</a>.</p>
+	</div>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="js/stellar.js"></script>
+	<script src="js/jquery-waypoints.js"></script>
+	<script src="js/jquery-easing.js"></script>
+	<script src="js/cool-kitten.js"></script>
+</body>
+</html>

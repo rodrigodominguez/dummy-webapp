@@ -1,0 +1,34 @@
+{
+  "name": "dummy-webapp",
+  "description": "Dummy WebApplication",
+  "version": "0.0.1",
+  "author": { 
+    "name" : "Rodrigo Dominguez",
+    "email" : "rodrigo.dominguez@gmail.com", 
+    "url" : "http://rodrigo.dominguez.com/"
+  },
+  "private": true,
+  "dependencies": {
+    "grunt": "*",
+    "grunt-contrib-copy": "*",
+    "grunt-contrib-concat": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-jshint": "*",
+    "grunt-contrib-cssmin": "*",
+    "grunt-contrib-connect": "*",
+    "grunt-contrib-clean": "*",
+    "grunt-contrib-htmlmin": "*",
+    "grunt-bower-install": "*",
+    "grunt-contrib-imagemin": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-supervisor": "*",
+    "grunt-contrib-jst": "*",
+    "grunt-contrib-less": "*",
+    "grunt-neuter": "*",
+    "grunt-usemin": "*",
+    "grunt-mocha": "*",
+    "grunt-svgmin": "*",
+    "grunt-concurrent": "*",
+    "grunt-bower-task": "*"    
+  }
+}
